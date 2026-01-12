@@ -58,4 +58,15 @@
     __coroutineExpression = 0;                                                                     \
     }
 
+/**
+ * @brief 重置协程状态。
+ * @note
+ * @param
+ * @retval
+ */
+#define __COROUTINE_RESET()                                                                        \
+    do {                                                                                           \
+        __coroutineExpression = 0;                                                                 \
+    } while (0)
+
 #endif // _COROUTINE_H_
